@@ -147,5 +147,321 @@ if(isNaN(numero)){
 
         /** inicio ejercicio 5 */
 
-        
+        /**calculadora basica */
+
+        let calculadoraBasica = prompt(" selecciona la operacion: 1. suma, 2. resta, 3. multiplicacion, 4. division ");
+        let operacion = parseInt(calculadoraBasica);
+
+        console.log("Usted escogio la opcion:",operacion);
+        alert(` usted escogio la opcion: ${operacion} `);
+        let numero1 = 20;
+        let numero2 = 5;
+
+        if(isNaN(operacion)){
+            alert(" ingresa un numero valido");
+            console.log("ingrese un numero valido");
+        } else {
+            switch(operacion) {
+                case 1:
+                    let suma = numero1 + numero2;
+                    alert("operacion suma $"+ suma);
+                    console.log("operacion suma $"+ suma);
+                    break;
+
+                case 2:
+                    let resta = numero1 - numero2;
+                    alert("operacion resta $" + resta);
+                    console.log("operacion resta $"+ resta);
+                    break;
+
+                case 3:
+                    let multiplicacion = numero1 * numero2;
+                    alert("operacion multiplicacion $"+ multiplicacion);
+                    console.log("operacion multiplicacion $"+ multiplicacion);
+                    break
+
+                case 4:
+                    let division= numero1 / numero2;
+                    alert("operacion division $"+ division);
+                    console.log("operacion division $"+ division);
+                    break;
+
+                default:
+                alert("Opción inválida, debe ser entre 1 y 4");
+                console.log(" Opción inválida, debe ser entre 1 y 4");
+                break;
+    }
+}
+
+/**ejercicio 6 */
+/** Aprobación y Reprobación */
+
+let nota1= parseFloat(prompt("ingresa la primera nota"));
+let nota2 = parseFloat(prompt("ingresa la segunda nota"));
+let nota3 = parseFloat(prompt("ingresa la tercera nota"));
+
+if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+    alert("debes ingresar solo numeros validos para las notas");
+    console.log("mostrar error: una o más no son validas");
+} else {
+    let promedio = (nota1 + nota2 + nota3) /3;
+    console.log("El promedio es:", promedio.toFixed(2));
+
+    if (promedio >= 6) {
+        alert("aprobado con promedio de "+ promedio.toFixed(2));
+        console.log("resultado: Aprobado");
+    
+    } else {
+        alert("reprobado con promedio de " + promedio.toFixed(2));
+        console.log("resultado reprobado");
+    }
+}
+/**fin ejercicio 6 */
+
+/**inicio ejercicio 7 */
+/**conversor de monedas */
+
+let valorDolares = parseFloat(prompt("Ingresa el valor en dolarers (USD):"));
+let opcion = parseInt(prompt("elige la moneda a convertir: \n1. euros\n2. pesos colombianos\n3. soles peruanos"));
+
+if (isNaN(valorDolares) || isNaN(opcion)) {
+    alert =("debe ingresar solo numeros validos.");
+    console.log("eroor: entrada no valida.");
+} else {
+    let resultado = 0;
+    let moneda = "";
+
+    switch(opcion) {
+
+        case 1:
+            resultado = valorDolares * 0.85; 
+            moneda = "euros";
+            break;
+
+        case 2:
+            resultado = valorDolares * 3700; 
+            moneda = "pesos colombianos";
+            break;
+
+        case 3:
+            resultado = valorDolares * 3.73; 
+            moneda = "soles peruanos";
+            break;
+        default:
+            alert("opcion no valida, intenta nuevamente");
+            console.log("opcion fuera d erango");
+            break;
+            
+    }
+        if (moneda !=="") {
+        alert(`$${valorDolares.toFixed(2)} USD equivalen a ${resultado.toFixed(2)} ${moneda}. `);
+        console.log(`conversion: ${valorDolares} USD, ${resultado.toFixed(2)} ${moneda} `);
+        }
+}
+/**fin ejercicio 7 */
+
     /**fin Validacion Condicionales */
+
+    /**nevel 2 */
+    /**inicio de bucles */ 
+
+    /**el mismo ejercico de tres formas */
+/**Inicio ejerccion 7 */
+{
+    /**for */
+for (let i = 10; i >= 1; i-- ) {
+    document.write("Numero: " + i + "<br>");
+    }
+}
+
+{
+    /**while */
+let i = 10;
+while (i >= 1) {
+    document.write("Numero: "+ i + "<br>");
+    i--;
+    }
+}
+
+{
+/**do while*/
+let i = 10;
+do {
+    document.write("Numero: " + i + "<br>");
+    i--;
+    } while (i >= 1);
+}
+
+{
+    /** ejerrcicio 9: suma acumulativa */
+    
+     let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
+     let suma = 0;
+
+     for (let i = 1; i <= N; i++) {
+        suma += i;
+     }
+    document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
+}
+{
+    let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
+    let suma = 0;
+    let i = 1;
+
+     while (i <= N) {
+        suma += i;
+        i++;
+     }
+
+      document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
+}
+
+{
+    let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
+    let suma = 0;
+    let i = 1;
+
+    do {
+       suma += i;
+        i++; 
+    } while (i <N);
+
+    document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
+}
+
+{
+    /**ejercicio 10: Buscador de Multiplos */
+
+    for(let i = 1; i <= 50; i++){
+        if (i % 5 === 0) {
+            document.write("Multiplo de 5: " +i + "<br>");
+        }
+    }
+}
+
+{
+    let = 1;
+
+    while (i <=50) {
+        if ( i % 5 === 0) {
+           document.write("Multiplo de 5: " +i + "<br>"); 
+        }
+        i++;
+    }
+}
+
+{
+    let = 1;
+
+    do {
+        if (i % 5 === 0) {
+            document.write("Multiplo de 5: " +i + "<br>");  
+        }
+        i++;
+    } while (i <= 50);
+}
+
+{
+    /**ejercicio 11:la clave maestra con while  */
+
+    let clave = prompt("Ingresa la contraseña:")
+    const correcta = "SESAMO123";
+
+    while (clave !== correcta) {
+        clave = prompt("Contraseña incorrecta. Intenta de nuevo:");
+    }
+    document.write("Contraseña incorrecta. Intenta de nuevo:");
+}
+ {
+    const correcta = "SESAMO123";
+    let clave;
+    do {
+        clave = prompt("ngresa la contraseña:");
+    }while (clave !== correcta);
+    document.write("Acceso concedido. Contraseña correcta.");
+ }
+
+ {
+    /** ejercicio 12: Tabla de Potencias*/
+    let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
+
+    for (let i = 1; i <= 5; i++) {
+        let potencia = numero ** i;
+        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
+    }
+ }
+
+ {
+     let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
+     let i = 1;
+
+     while (i <= 5) {
+    let potencia = numero ** i;
+        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
+        i++;  
+     }
+ }
+  {
+    let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
+     let i = 1;
+     do {
+        let potencia = numero ** i;
+        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
+        i++;
+     } while (i <= 5);
+  }
+
+ {
+    /**filtro de positivos: do-while */
+
+    let numero;
+    
+    do {
+        numero = parseInt(prompt("Ingresa un numero (negativo para determinar):"));
+        if (numero >= 0) {
+            document.write("Numero Ingresado: " + numero +"<br>");
+        }
+
+    }while (numero >= 0);
+
+    document.write("Has ingresado un numero negativo. Fin del ejercicio. <br>");
+
+ }
+
+ {
+     /**nivel 3: Estructura de datos y logica combinada */
+    /**ejercicio 14: el array de compras  */
+
+    let comoras = [];
+  
+    for (let i = 1; i <=5; i++) {
+        let producto = prompt("ingresa el producto " + 1 + ":");
+        compras.push(producto);
+    }
+
+    document.write("<h3>Lista de compras: </h3>");
+    for (let i = 0; i < compras.length; i++) {
+        document.write(comoras[i] + "<br>");
+    }
+
+ }
+
+ {
+    /**ejercicio 15: Buscador de nombres */
+
+    let nombre = ["Ana", "Luis", "Carlos", "Maria", "Jorge"];
+    let buscar = prompt("Ingresar un nombre para buscaar:");
+    let encontrado = false;
+
+    for (let i = 0; i < nombres.length; i++) {
+        if (nombres[i].toLowercase() === buscar.toLowerCase()) {
+            encontrado = true;
+            break;
+        }
+    }
+    if (encontrado) {
+        document.write(" El nombre " + buscar + "Si esat en la lista . <br>");
+    } else {
+        document.write(" el nombre " + buscar + " NO esta en la lista. <br>");
+    }
+ }
