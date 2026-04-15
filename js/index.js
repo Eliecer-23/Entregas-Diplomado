@@ -1,27 +1,3 @@
-/** inicio Validacion Condicionales */
-/** inicio ejercicio 1 */
-        /** validador de edad*/
-
-    let solicitudDeEdad1 = ("cuantos años tienes");
-    let edad1 = 17;
-    let edad2 = 21;
-
-    if(edad1 <18){
-        console.log("acceso denegado");
-    }else {
-        console.log("puede acceder");
-    }
-
-    /**validador ingreso */
- if(edad2 >18){
-        console.log("Bienvenido");
-    }else {
-        console.log("no es bienvenido");
-    }
-/** resultado */
-alert(`edad1 es: ${edad1}`);
-
-/* fin ejercicio 1 */
 
 
 /** inicio ejercico 2 */
@@ -340,9 +316,11 @@ do {
 }
 
 {
-    let = 1;
+    let i =1;
+    
+    
 
-    while (i <=50) {
+    while (i <= 50) {
         if ( i % 5 === 0) {
            document.write("Multiplo de 5: " + i + "<br>"); 
         }
@@ -351,7 +329,7 @@ do {
 }
 
 {
-    let = 1;
+    let i = 1;
 
     do {
         if (i % 5 === 0) {
@@ -432,7 +410,7 @@ do {
      /**nivel 3: Estructura de datos y logica combinada */
     /**ejercicio 14: el array de compras  */
 
-    let comoras = [];
+    let compras = [];
   
     for (let i = 1; i <=5; i++) {
         let producto = prompt("ingresa el producto " + 1 + ":");
@@ -441,9 +419,8 @@ do {
 
     document.write("<h3>Lista de compras: </h3>");
     for (let i = 0; i < compras.length; i++) {
-        document.write(comoras[i] + "<br>");
-    }
-
+        document.write(compras[i] + "<br>");
+    }p
  }
 
  {
