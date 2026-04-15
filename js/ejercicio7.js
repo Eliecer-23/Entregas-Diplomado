@@ -37,3 +37,4 @@ if (isNaN(valorDolares) || isNaN(opcion)) {
         alert(`$${valorDolares.toFixed(2)} USD equivalen a ${resultado.toFixed(2)} ${moneda}. `);
         console.log(`conversion: ${valorDolares} USD, ${resultado.toFixed(2)} ${moneda} `);
         }
+}

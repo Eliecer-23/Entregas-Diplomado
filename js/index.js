@@ -242,7 +242,7 @@ if (isNaN(valorDolares) || isNaN(opcion)) {
     /**inicio de bucles */ 
 
     /**el mismo ejercico de tres formas */
-/**Inicio ejerccion 7 */
+/**Inicio ejerccion 8 */
 {
     /**for */
 for (let i = 10; i >= 1; i-- ) {
