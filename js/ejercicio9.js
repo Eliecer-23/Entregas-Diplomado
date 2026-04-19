@@ -1,35 +1,34 @@
 /** ejerrcicio 9: suma acumulativa */
-    
-     let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
-     let suma = 0;
+    /**for */
+     let N1 = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N (for):"));
+     let suma1 = 0;
 
-     for (let i = 1; i <= N; i++) {
-        suma += i;
+     for (let i = 1; i <= N1; i++) {
+        suma1 += i;
      }
-    document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
+    document.getElementById("ejercicio9").innerHTML += "la suma desde 1 hasta " + N1 + " es: " + suma1 + "(for)<br>"
 
-{
-    let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
-    let suma = 0;
-    let i = 1;
+    /**while */
+    let N2 = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N (while):"));
+    let suma2 = 0;
+    let w = 1;
 
-     while (i <= N) {
-        suma += i;
-        i++;
+     while (w <= N2) {
+        suma2 += w;
+        w++;
      }
+      document.getElementById("ejercicio9").innerHTML += "la suma desde 1 hasta N2" + N2 + " es: " + suma2 + "(while)<br>";
 
-      document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
-}
 
-{
-    let N = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N:"));
-    let suma = 0;
-    let i = 1;
+     /**do while */
+    let N3 = parseInt(prompt("ingresa un numero para sumar desde 1 hasta N (do while):"));
+    let suma3 = 0;
+    let d = 1;
 
     do {
-       suma += i;
-        i++; 
-    } while (i <N);
+       suma3 += d;
+        d++; 
+    } while (d <N3);
 
-    document.write(" La suma desde 1 hasta " + N + " es: " + suma + "<br>");
-    }
+    document.getElementById("ejercicio9").innerHTML += "la suma desde 1 hasta " + N3 + " es: " + suma3 + " (do while)<br>";
+    

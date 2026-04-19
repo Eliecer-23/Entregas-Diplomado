@@ -2,31 +2,30 @@
 
     for(let i = 1; i <= 50; i++){
         if (i % 5 === 0) {
-            document.write("Multiplo de 5: " + i + "<br>");
+            document.getElementById("ejercicio10").innerHTML +="multiplo de 5 (for): " + i + "<br>"
         }
     }
 
 
-{
-    let i =1;
+    /**while */
+    let w =1;
     
     
 
-    while (i <= 50) {
-        if ( i % 5 === 0) {
-           document.write("Multiplo de 5: " + i + "<br>"); 
+    while (w <= 50) {
+        if ( w % 5 === 0) {
+           document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (while): " + w + "<br>"
         }
-        i++;
+        w++;
     }
-}
 
-{
-    let i = 1;
+
+    /**do while */
+    let d = 1;
 
     do {
-        if (i % 5 === 0) {
-            document.write("Multiplo de 5: " + i + "<br>");  
+        if (d % 5 === 0) {
+          document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (do while): " + d + "<br>"    
         }
         i++;
-    } while (i <= 50);
-}
+    } while (d <= 50);

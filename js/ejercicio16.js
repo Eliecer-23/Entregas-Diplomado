@@ -2,15 +2,22 @@
 
     let auto = {
         marca: "Toyota",
-        modelo: "Corola",
+        modelo: "Corolla",
         año: 2018
-
     };
-
+    /**solicitar año */
     let nuevoAño = parseInt(prompt("Ingresa el nuevo año del auto: "));
-    auto.año = nuevoAño;
     
-    document.write("<h3>auto actualizado: </h3>");
-    document.write("Marca: " + auto.marca + "<br>");
-    document.write("Modelo: " + auto.modelo + "<br>");
-    document.write("Año " + auto.año + "<br>");
+    /**Validacion basica */
+    if (isNaN(nuevoAño)) {
+        auto.año = nuevoAño
+    }
+    
+    let contenedor = document.getElementById("ejercicio16");
+    contenedor.innerHTML =`
+    <h3>auto actualizado:</h3>
+    marca: $ {auto.modelo} <br>
+    año: ${auto.año} <br>
+    `
+    
+    

@@ -5,14 +5,18 @@
     let encontrado = false;
 
     for (let i = 0; i < nombres.length; i++) {
-        if (nombres[i].toLowercase() === buscar.toLowerCase()) {
+        if (nombres[i].toLowerCase() === buscar.toLowerCase()) {
             encontrado = true;
             break;
         }
     }
+
+    let contenedor = document.getElementById("ejercicio15");
+
     if (encontrado) {
-        document.write(" El nombre " + buscar + "Si esat en la lista . <br>");
-    } else {
-        document.write(" el nombre " + buscar + " NO esta en la lista. <br>");
-    }
- 
+        contenedor.innerHTML = 
+        `el nombre <strong>${buscar}</strong> si en la lista.<br>`;
+        } else {
+        contenedor.innerHTML = 
+        ` el nombre <strong>${buscar}</strong> no esta en la lista. <br>`
+        }

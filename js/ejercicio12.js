@@ -1,30 +1,35 @@
 /** ejercicio 12: Tabla de Potencias*/
+    /**for */
     let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
 
     for (let i = 1; i <= 5; i++) {
         let potencia = numero ** i;
-        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
+        document.getElementById("ejercicio12").innerHTML += 
+        numero1 + " elevado a " + i + "=" + potencia + "(for)<br>";
     }
  
 
- {
-     let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
-     let i = 1;
+    /**while */
+     let numero2 = parseInt(prompt("Ingresa un numero Para calcular sus potencias (while):"));
+     let w = 1;
 
-     while (i <= 5) {
-    let potencia = numero ** i;
-        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
-        i++;  
+     while (w <= 5) {
+        let potencia = numero2 ** w;
+        document.getElementById("ejercicio12").innerHTML +=
+        numero2 + "elevado a " + w + "=" + potencia + "(while)<br>";
+        w++;  
      }
- }
-  {
-    let numero = parseInt(prompt("Ingresa un numero Para calcular sus potencias:"));
-     let i = 1;
+ 
+     /**do while */
+
+    let numero3 = parseInt(prompt("Ingresa un numero Para calcular sus potencias (do while):"));
+     let do = 1;
      do {
-        let potencia = numero ** i;
-        document.write(numero + "elevado a " + i + " = " +potencia + "<br>");
-        i++;
-     } while (i <= 5);
-  }
+        let potencia = numero3 ** d;
+        document.getElementById("ejercicio12").innerHTML +=
+        numero3 + "elevado a " + d + "=" + potencia + "(do while)<br>";
+        d++;
+     } while (d <= 5);
+  
 
  

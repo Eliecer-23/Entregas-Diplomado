@@ -3,24 +3,24 @@
 {
     /**for */
 for (let i = 10; i >= 1; i-- ) {
-    document.write("Numero: " + i + "<br>");
+    document.getElementById("ejercicio8").innerHTML += "numero (for):" + i + "br"
     }
 }
 
 {
     /**while */
-let i = 10;
-while (i >= 1) {
-    document.write("Numero: "+ i + "<br>");
-    i--;
+let w = 10;
+while (w >= 1) {
+    document.getElementById("ejercicio8").innerHTML += "numero (while):" + w + "br"
+    w--;
     }
 }
 
 {
 /**do while*/
-let i = 10;
+let d = 10;
 do {
-    document.write("Numero: " + i + "<br>");
-    i--;
-    } while (i >= 1);
+    document.getElementById("ejercicio8").innerHTML += "numero (for):" + d + "br"
+    d--;
+    } while (d >= 1);
 }

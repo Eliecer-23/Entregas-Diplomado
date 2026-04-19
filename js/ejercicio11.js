@@ -1,18 +1,17 @@
 /**ejercicio 11:la clave maestra con while  */
+    /**while */
+    let clave1 = prompt("Ingresa la contraseña:")
+    const correcta1 = "SESAMO123";
 
-    let clave = prompt("Ingresa la contraseña:")
-    const correcta = "SESAMO123";
-
-    while (clave !== correcta) {
-        clave = prompt("Contraseña incorrecta. Intenta de nuevo:");
+    while (clave !== correcta1) {
+        clave1 = prompt("Contraseña incorrecta. Intenta de nuevo:");
     }
-    document.write("Contraseña incorrecta. Intenta de nuevo:");
+    document.getElementById("ejercicio11").innerHTML += "acceso concedido (while). contraseña correcta.<br>";
 
- {
-    const correcta = "SESAMO123";
-    let clave;
+    /** do while */
+    const correcta2 = "SESAMO123";
+    let clave2;
     do {
-        clave = prompt("ngresa la contraseña:");
-    }while (clave !== correcta);
-    document.write("Acceso concedido. Contraseña correcta.");
- }
+        clave2 = prompt("ifngresa la contraseña:");
+    }while (clave2 !== correcta2);
+    document.getElementById(ejercicio11).innerHTML += "acceso concedido (do while). contraseña correcta. <br>";

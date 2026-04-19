@@ -1,16 +1,16 @@
     /**ejercicio 13 */
     /**filtro de positivos: do-while */
 
-    let numero;
+    let numero13;
     
     do {
-        numero = parseInt(prompt("Ingresa un numero (negativo para determinar):"));
-        if (numero >= 0) {
-            document.write("Numero Ingresado: " + numero +"<br>");
+        numero13 = parseInt(prompt("Ingresa un numero (negativo para determinar):"));
+        if (numero13 >= 0) {
+            document.getElementById("ejercicio13").innerHTML += "Numero Ingresado: " + numero13 +"<br>";
         }
 
-    }while (numero >= 0);
+    }while (numero13 >= 0);
 
-    document.write("Has ingresado un numero negativo. Fin del ejercicio. <br>");
+    document.getElementById("ejercicio13").innerHTML += "has Ingresado un numero negativo. Fin del ejercicio.<br";
 
  

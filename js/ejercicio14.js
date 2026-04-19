@@ -1,8 +1,10 @@
 /**ejercicio 14: el array de compras */
 
-function pedirProducto(){
+
     let compras = [];
-    for (let i =0; 1 < 5; i++) {
+
+    /** pedir 5 Producto */
+    for (let i = 0; i < 5; i++) {
         let producto = prompt(`Ingresa el producto ${i + 1}:`)
         
         /**validacion  */
@@ -13,11 +15,9 @@ function pedirProducto(){
         compras.push(producto.trim());
     }
     }
-}
+
 
  /**mostrar en html */
- for (let i = 0; i < compras.length; i++) {
-    const li = document.createElement("li");
-    li.textContent = compras[i];
-    lista.appendchild(li);
- }
+    let contenedor = document.getElementById("ejercicio14");
+    contenedor.innerHTML += `. ${compras [i]} <br>`;
+ 
