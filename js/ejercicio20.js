@@ -2,15 +2,21 @@
 
     let numeros = [ 10, 20, 30, 40, 50];
     
-    let nuevovalor = parseInt(prompt("ingresa un nuevo numero:"));
-    let posicion = parseInt(prompt("Ingresa la posicion a reemplazar (0 a 4);"));
+    let nuevoValor20 = parseInt(prompt("ingresa un nuevo numero:"));
+    let posicion20 = parseInt(prompt("Ingresa la posicion a reemplazar (0 a 4);"));
 
-    if (posicion >= 0 && posicion < numeros.length) {
-        numeros[posicion] = nuevoValor;
+    let contenedor20 = document.getElementById(" ejercicio 20");
+
+    
+    
+    if (posicion >= 0 && posicion20 < numeros20.length) {
+        numeros20[posicion20] = nuevoValor20;
     } else {
-        document.write("Posicion invalida. <br>");
+        contenedor20.innerHTML = "Posicion invalida. <br>";
     }
-    document.write("<h3>Array Final:</h3>");
+    /**mostrar array final */
+    contenedor20.innerHTML += "<h3>array final:</h3"
+    
     for (let i = 0; i < numeros.length; i++) {
-        document.write(numeros[i] + "<br>");
+        contenedor20.innerHTML += numeros20[i] + "<br>";
     }
