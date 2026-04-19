@@ -14,4 +14,4 @@
     do {
         clave2 = prompt("ifngresa la contraseña:");
     }while (clave2 !== correcta2);
-    document.getElementById(ejercicio11).innerHTML += "acceso concedido (do while). contraseña correcta. <br>";
+    document.getElementById("ejercicio11").innerHTML += "acceso concedido (do while). contraseña correcta. <br>";
