@@ -8,24 +8,24 @@
 
 
     /**while */
-    let w =1;
+    let w10 =1;
     
     
 
-    while (w <= 50) {
-        if (w % 5 === 0) {
-           document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (while): " + w + "<br>"
+    while (w10 <= 50) {
+        if (w10 % 5 === 0) {
+           document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (while): " + w10 + "<br>"
         }
-        w++;
+        w10++;
     }
 
 
     /**do while */
-    let d = 1;
+    let d10 = 1;
 
     do {
-        if (d % 5 === 0) {
-          document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (do while): " + d + "<br>"    
+        if (d10 % 5 === 0) {
+          document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (do while): " + d10 + "<br>"    
         }
-        d++;
-    } while (d <= 50);
+        d10++;
+    } while (d10 <= 50);
