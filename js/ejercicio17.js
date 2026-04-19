@@ -19,9 +19,9 @@
     /**mostrar en html */
     let contenedor = document.getElementById("ejercicio17");
 
-    contenedor.innerHTML = "<h3>lis de estudiantes:</h3";
+    contenedor.innerHTML = "<h3>Lista de estudiantes:</h3";
         
     for (let i = 0; i < estudiantes.length; i++) {
         contenedor.innerHTML +=
-            `${estudiantes[i].nombre} - nota: ${estudiantes[i].nota} <br>`
+            `${estudiantes[i].nombre} - nota: ${estudiantes[i].nota} <br>`;
   } 

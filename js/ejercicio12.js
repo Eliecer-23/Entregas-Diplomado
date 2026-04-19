@@ -23,7 +23,7 @@
      /**do while */
 
     let numero3 = parseInt(prompt("Ingresa un numero Para calcular sus potencias (do while):"));
-     let do = 1;
+     let d = 1;
      do {
         let potencia = numero3 ** d;
         document.getElementById("ejercicio12").innerHTML +=

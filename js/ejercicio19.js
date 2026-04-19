@@ -11,7 +11,7 @@
 
         if (opcion19 === 1) {
             contenedor19.innerHTML += "hola, usuraio!<br>";
-        } else if (opcion19 ===2) {
+        } else if (opcion19 === 2) {
             contenedor19.innerHTML += " Adios, Usuario!<br>";
         }else if (isNaN(opcion19)) {
             contenedor19.innerHTML += "opcion invalida. ingresar un numero.<br>";

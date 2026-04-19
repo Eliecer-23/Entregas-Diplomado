@@ -10,7 +10,7 @@
     
     /**Validacion basica */
     if (isNaN(nuevoAño)) {
-        auto.año = nuevoAño
+        auto.año = nuevoAño;
     }
     
     let contenedor = document.getElementById("ejercicio16");
@@ -18,6 +18,6 @@
     <h3>auto actualizado:</h3>
     marca: $ {auto.modelo} <br>
     año: ${auto.año} <br>
-    `
+    `;
     
     

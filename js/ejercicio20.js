@@ -9,7 +9,7 @@
 
     
     
-    if (posicion >= 0 && posicion20 < numeros20.length) {
+    if (posicion20 >= 0 && posicion20 < numeros20.length) {
         numeros20[posicion20] = nuevoValor20;
     } else {
         contenedor20.innerHTML = "Posicion invalida. <br>";

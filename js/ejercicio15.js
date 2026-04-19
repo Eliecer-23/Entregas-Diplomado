@@ -4,6 +4,11 @@
     let buscar = prompt("Ingresar un nombre para buscaar:");
     let encontrado = false;
 
+    /**validacion de entrada */
+    if (buscar !== null) {
+        buscar = buscar.trim();
+    }
+
     for (let i = 0; i < nombres.length; i++) {
         if (nombres[i].toLowerCase() === buscar.toLowerCase()) {
             encontrado = true;

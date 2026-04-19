@@ -13,7 +13,7 @@
     
 
     while (w <= 50) {
-        if ( w % 5 === 0) {
+        if (w % 5 === 0) {
            document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (while): " + w + "<br>"
         }
         w++;
@@ -27,5 +27,5 @@
         if (d % 5 === 0) {
           document.getElementById("ejercicio10").innerHTML += "multiplo de 5 (do while): " + d + "<br>"    
         }
-        i++;
+        d++;
     } while (d <= 50);

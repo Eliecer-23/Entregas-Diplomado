@@ -4,14 +4,14 @@
     let precio18;
 
     do {
-        precio = parseFloat(prompt("Ingresa el perecio del produccto (0 para terminar):"));
+        precio18 = parseFloat(prompt("Ingresa el perecio del produccto (0 para terminar):"));
         if (!isNaN(precio18) && precio18 > 0) {
             total18 += precio18;
         }
     } while (precio18 !== 0);
 
     /**aplicacion de descuento */
-    if (total > 100) {
+    if (total18 > 100) {
         total18 = total18 * 0.90; /** 10% descuento */
     }
 
