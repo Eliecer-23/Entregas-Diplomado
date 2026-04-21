@@ -28,7 +28,7 @@
         let potencia = numeroDo ** d;
         document.getElementById("ejercicio12").innerHTML +=
         numeroDo + "elevado a " + d + "=" + potencia + "(do while)<br>";
-        d12++;
+        d++;
      } while (d <= 5);
   
 
