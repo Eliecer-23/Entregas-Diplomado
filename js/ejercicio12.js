@@ -14,7 +14,7 @@
      let w12 = 1;
 
      while (w12 <= 5) {
-        let potencia = numero12 ** w;
+        let potencia = numero12 ** w12;
         document.getElementById("ejercicio12").innerHTML +=
         numero12 + "elevado a " + w12 + "=" + potencia + "(while)<br>";
         w12++;  
