@@ -1,6 +1,6 @@
 /** ejercicio 12: Tabla de Potencias*/
     /**for */
-    let numero12 = parseInt(prompt("Ingresa un numero Para calcular sus potencias (FOR):"));
+    let numerofor = parseInt(prompt("Ingresa un numero Para calcular sus potencias (FOR):"));
 
     for (let i = 1; i <= 5; i++) {
         let potencia = numero ** i;
@@ -10,26 +10,26 @@
  
 
     /**while */
-     let numero12 = parseInt(prompt("Ingresa un numero Para calcular sus potencias (while):"));
+     let numeroWhile = parseInt(prompt("Ingresa un numero Para calcular sus potencias (while):"));
      let w12 = 1;
 
-     while (w12 <= 5) {
+     while (w <= 5) {
         let potencia = numero12 ** w12;
         document.getElementById("ejercicio12").innerHTML +=
-        numero12 + "elevado a " + w12 + "=" + potencia + "(while)<br>";
-        w12++;  
+        numero12 + "elevado a " + w + "=" + potencia + "(while)<br>";
+        w++;  
      }
  
      /**do while */
 
-    let numero12_do = parseInt(prompt("Ingresa un numero Para calcular sus potencias (do while):"));
-     let d12 = 1;
+    let numeroDo = parseInt(prompt("Ingresa un numero Para calcular sus potencias (do while):"));
+     let d = 1;
      do {
-        let potencia = numero12_do ** d12;
+        let potencia = numeroDo ** d;
         document.getElementById("ejercicio12").innerHTML +=
-        numero12_do + "elevado a " + d12 + "=" + potencia + "(do while)<br>";
+        numeroDo + "elevado a " + d + "=" + potencia + "(do while)<br>";
         d12++;
-     } while (d12 <= 5);
+     } while (d <= 5);
   
 
  
