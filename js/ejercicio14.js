@@ -19,8 +19,8 @@ function pedirProducto() {
     return compras; /**devolvemos el array */
 }
 
- /** ejecutar funcion */ lis
-let ListaCompras = pedirProducto
+ /** ejecutar funcion */ 
+let ListaCompras = pedirProducto();
 
  /**mostrar en html */
     const contenedor = document.getElementById("ejercicio14");
@@ -28,6 +28,6 @@ let ListaCompras = pedirProducto
     contenedor.innerHTML += "<h3>Lista de compras ingresadas:</h3>";
 
     for (let i = 0; i < ListaCompras.length; i++) {
-        contenedor.innerHTML += `.${ListaCompras[i]} <br>`;
+        contenedor.innerHTML += `. ${ListaCompras[i]} <br>`;
     }
  
