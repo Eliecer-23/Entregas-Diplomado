@@ -2,23 +2,22 @@
 /** inicio ejercicio 1 */
         /** validador de edad*/
 
-    let solicitudDeEdad1 = ("cuantos años tienes");
-    let edad1 = 17;
-    let edad2 = 21;
+    let solicitudEdad1 = Number(prompt("primera edad cuantos años tienes"));
+    let solicitudEdad2 = Number(prompt("segunda edad cuantos años tienes"));
+    let edad = Number(solicitudEdad1);
+    let edad2 = Number(solicitudEdad2);
 
-    if(edad1 <18){
-        console.log("acceso denegado");
-    }else {
-        console.log("puede acceder");
+    if(edad >=18){
+        alert(' la primera edad es : $(edad) Si es Bienvenido ');
+          }else {
+                alert(' la primera edad es : $ (edad) No es Bienvenido');        
     }
 
     /**validador ingreso */
- if(edad2 >18){
-        console.log("Bienvenido");
+ if(edad2 >=18){
+        alert(' la primera edad es : $(edad2) Si es Bienvenido ');
     }else {
-        console.log("no es bienvenido");
+        alert(' la primera edad es : $ (edad2) No es Bienvenido');
     }
-/** resultado */
-alert(`edad1 es: ${edad1}`);
 
 /* fin ejercicio 1 */
