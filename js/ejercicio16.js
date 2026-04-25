@@ -13,11 +13,16 @@
         auto.año = nuevoAño;
     }
     
-    let contenedor = document.getElementById("ejercicio16");
+    console.log(auto);
+    console.log("marca:" , auto.marca);
+    console.log("modelo: " , auto.modelo);
+    console.log("año:" , auto.año);
+    
+    /* let contenedor = document.getElementById("ejercicio16");
     contenedor.innerHTML =`
     <h3>auto actualizado:</h3>
     marca: $ {auto.modelo} <br>
     año: ${auto.año} <br>
-    `;
+    `; */
     
     
