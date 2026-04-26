@@ -4,7 +4,7 @@
     let precio18;
 
     do {
-        precio18 = parseFloat(prompt("Ingresa el perecio del produccto (0 para terminar):"));
+        precio18 = parseFloat(prompt("Ingresa el precio del producto (0 para terminar):"));
         if (!isNaN(precio18) && precio18 > 0) {
             total18 += precio18;
         }
@@ -17,6 +17,6 @@
 
     let contenedor = document.getElementById("ejercicio18");
 
-    contenedor18.innerHTML -`
-    <H3> total del carrito:</h3>
+    contenedor.innerHTML = `
+    <h3> Total del carrito:</h3>
     total a pagar: $${total18.toFixed(2)} <br>`;

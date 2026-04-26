@@ -15,7 +15,7 @@
     
     console.log(auto);
     console.log("marca:" , auto.marca);
-    console.log("modelo: " , auto.modelo);
+    console.log("modelo:" , auto.modelo);
     console.log("año:" , auto.año);
     
     /* let contenedor = document.getElementById("ejercicio16");

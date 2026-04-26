@@ -1,28 +1,30 @@
 /**ejercicio 15: Buscador de nombres */
 
-    let nombre = ["Ana", "Luis", "Carlos", "Maria", "Jorge"];
+    let nombres = ["Ana", "Luis", "Carlos", "Maria", "Jorge"];
     let buscar = prompt("Ingresar un nombre para buscaar:");
     let encontrado = false;
 
     /**validacion de entrada */
-    if (buscar !== null) {
+    if (buscar === null) {
+        alert("canclaste la busqueda.");    
+    } else {
         buscar = buscar.trim();
-    }
 
-    for (let i = 0; i < nombre.length; i++) {
-        if (nombre[i].toLowerCase() === buscar.toLowerCase()) {
-            encontrado = true;
-            break;
-        }
-    }
-
-    let contenedor = document.getElementById("ejercicio15");
-
-
-    if (encontrado) {
-        contenedor.innerHTML = 
-        `el nombre <strong>${buscar}</strong> SI esta en la lista.<br>`;
+        if (busca ==="") {
+            alert('No ingresaste ningun nombre.');
         } else {
-        contenedor.innerHTML = 
-        ` el nombre <strong>${buscar}</strong> NO esta en la lista. <br>`
+            let textoBusqueda = buscar.toLowerCase();
+
+            let encontrado = nombres.some(
+                nombre => nombre.toLowerCase() === textoBusqueda
+            );
+            let encontrado =document.getElementById("ejercicio15");
+           
+
+        contenedor.innerHTML = encontrado
+        ?`el nombre <strong>${buscar}</strong> SI esta en la lista.<br>`
+         
+        :` el nombre <strong>${buscar}</strong> NO esta en la lista. <br>`;
         }
+    }
+
