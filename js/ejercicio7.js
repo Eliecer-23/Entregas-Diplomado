@@ -29,7 +29,7 @@ if (isNaN(valorDolares) || isNaN(opcion)) {
             break;
         default:
             alert("opcion no valida, intenta nuevamente");
-            console.log("opcion fuera d erango");
+            console.log("opcion fuera de rango");
             break;
             
     }

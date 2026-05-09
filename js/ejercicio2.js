@@ -9,6 +9,7 @@ console.log("Usted escogio la opcion:",sabor);
 alert(` usted escogio la opcion: ${sabor} `);
     let precioBase = 5;
     let precioFinal = precioBase;
+    
 
 /** comprobacion */
 if(isNaN(sabor)){

@@ -15,7 +15,8 @@
 
     /**validador ingreso */
  if(edad2 >=18){
-        alert(' la primera edad es : $(edad2) Si es Bienvenido ');
+
+        alert(' la primera edad es : $ (edad2) Si es Bienvenido ');
     }else {
         alert(' la primera edad es : $ (edad2) No es Bienvenido');
     }

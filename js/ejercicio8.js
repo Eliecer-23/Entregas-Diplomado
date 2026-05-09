@@ -11,7 +11,9 @@ for (let i = 10; i >= 1; i-- ) {
     /**while */
 let w = 10;
 while (w >= 1) {
-    document.getElementById("ejercicio8").innerHTML += "numero (while):" + w + "br"
+    
+    
+    
     w--;
     }
 }
